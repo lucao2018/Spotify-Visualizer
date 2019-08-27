@@ -7,10 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Getting Started
 
 1.) Create a new Spotify app in your Spotify Developer Dashboard
+
 2.) Add http://localhost:3000 to your app's redirect URIs
+
 3.) Add your client_id and and redirect_uri to config.js
 
-Install dependecies and start
+Install dependencies and start
 
 ```
 npm install
