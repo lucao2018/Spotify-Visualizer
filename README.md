@@ -4,6 +4,11 @@ A real time Spotify visualizer built with React, the Spotify API audio analysis,
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### To do
+
+- [ ] Add/clean up comments and documentation
+- [ ] Improve visualizer graphics
+
 ## Getting Started
 
 1.) Create a new Spotify app in your Spotify Developer Dashboard
