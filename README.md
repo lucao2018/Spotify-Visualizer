@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### To do
 
-- [ ] Add/clean up comments and documentation
+- [ ] Add/clean up comments, code, and documentation
 - [ ] Improve visualizer graphics
 
 ## Getting Started
