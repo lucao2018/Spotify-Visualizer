@@ -28,11 +28,11 @@ class App extends Component {
       pitches: [],
       loudness: [],
       durations: []
-
     };
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
     this.getAudioAnalysis = this.getAudioAnalysis.bind(this);
   }
+
   componentDidMount() {
     let _token = hash.access_token;
     if (_token) {
@@ -42,7 +42,7 @@ class App extends Component {
       spotifyApi.setAccessToken(_token);
       this.myInterval = setInterval(() => {
         this.getCurrentlyPlaying();
-      }, 1000)
+      }, 1000);
     }
   }
 
@@ -50,7 +50,7 @@ class App extends Component {
     clearInterval(this.myInterval);
   }
 
-  componentDidUpdate(prevProps,prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (prevState.item.id !== this.state.item.id) {
       this.getAudioAnalysis(this.state.item.id);
     }
@@ -58,7 +58,6 @@ class App extends Component {
 
   getCurrentlyPlaying() {
     spotifyApi.getMyCurrentPlaybackState().then(response => {
-      // console.log("test",response.item.id);
       this.setState({
         item: response.item,
         is_playing: response.is_playing,
@@ -77,7 +76,7 @@ class App extends Component {
       for (let i = 0; i < segments.length; i++) {
         localPitches.push(segments[i].pitches);
         localLoudness.push(segments[i].loudness_max);
-        localDurations.push(segments[i].start*1000)
+        localDurations.push(segments[i].start * 1000);
       }
 
       this.setState({

@@ -3,7 +3,6 @@ import "./Player.css";
 
 class Player extends Component {
   render() {
-      
     const backgroundStyles = {
       backgroundImage: `url(${this.props.item.album.images[0].url})`
     };
@@ -14,7 +13,7 @@ class Player extends Component {
 
     return (
       <div className="Player">
-        <div className="main-wrapper" id = "test">
+        <div className="main-wrapper" id="test">
           <div className="now-playing__img">
             <img src={this.props.item.album.images[0].url} />
           </div>
